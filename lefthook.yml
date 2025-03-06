@@ -1,0 +1,16 @@
+pre-commit:
+  parallel: true
+  commands:
+    format:
+      glob: "*.{js,ts,jsx,tsx,json}"
+      exclude: "tsconfig*.json"
+      run: pnpm biome format --write {staged_files} && git add {staged_files}
+    lint:
+      glob: "*.{js,ts,jsx,tsx}"
+      exclude: "tsconfig*.json"
+      run: pnpm biome check {staged_files}
+
+commit-msg:
+  commands:
+    lint-commit-message:
+      run: pnpm biome check --write --unsafe --no-errors-on-unmatched --files-ignore-unknown=true {1}

@@ -1,0 +1,22 @@
+{
+  "name": "boilerplates",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "prepare": "lefthook install"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/node": "^22.13.9",
+    "lefthook": "^1.6.1",
+    "typescript": "~5.8.2"
+  },
+  "engines": {
+    "node": ">=22.14.0",
+    "pnpm": ">=10.5.2",
+    "npm": "use pnpm",
+    "yarn": "use pnpm"
+  },
+  "packageManager": "pnpm@10.5.2"
+}
