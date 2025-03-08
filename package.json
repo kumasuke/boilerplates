@@ -5,11 +5,10 @@
   "scripts": {
     "prepare": "lefthook install"
   },
-  "dependencies": {},
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@types/node": "^22.13.9",
-    "lefthook": "^1.6.1",
+    "lefthook": "^1.11.3",
     "typescript": "~5.8.2"
   },
   "engines": {
